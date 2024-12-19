@@ -1,0 +1,1435 @@
+Unity Editor version:    2022.3.43f1 (85497d293fa1)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.1.1 (Build 24B91)
+Darwin version:          24.1.0
+Architecture:            x86_64
+Running under Rosetta:   YES
+Available memory:        8192 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.43f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+/Users/asakurahiroto/self_development/Game/pizza-game
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+56634
+Successfully changed project path to: /Users/asakurahiroto/self_development/Game/pizza-game
+/Users/asakurahiroto/self_development/Game/pizza-game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8705741312]  Target information:
+
+Player connection [8705741312]  * "[IP] 172.20.45.98 [Port] 0 [Flags] 2 [Guid] 4015952291 [EditorId] 4015952291 [Version] 1048832 [Id] OSXEditor(0,ASAKURA.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8705741312] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8705741312] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 13.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.43f1 (85497d293fa1)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.43f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/asakurahiroto/self_development/Game/pizza-game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.43f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.43f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.43f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.43f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.43f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001587 seconds.
+- Loaded All Assemblies, in  0.891 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.990 seconds
+Domain Reload Profiling: 1883ms
+	BeginReloadAssembly (430ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (173ms)
+	LoadAllAssembliesAndSetupDomain (200ms)
+		LoadAssemblies (426ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (196ms)
+			TypeCache.Refresh (193ms)
+				TypeCache.ScanAssembly (167ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (992ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (885ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (15ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (13ms)
+			ProcessInitializeOnLoadAttributes (625ms)
+			ProcessInitializeOnLoadMethodAttributes (198ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.096 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.486 seconds
+Domain Reload Profiling: 3585ms
+	BeginReloadAssembly (348ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (39ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (127ms)
+	LoadAllAssembliesAndSetupDomain (566ms)
+		LoadAssemblies (482ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (256ms)
+			TypeCache.Refresh (213ms)
+				TypeCache.ScanAssembly (189ms)
+			ScanForSourceGeneratedMonoScriptInfo (29ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (2488ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2137ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (1863ms)
+			ProcessInitializeOnLoadMethodAttributes (103ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.43f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 1.03 seconds
+Refreshing native plugins compatible for Editor in 3.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3114 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (48.9 KB). Loaded Objects now: 3581.
+Memory consumption went from 131.6 MB to 131.6 MB.
+Total: 11.828000 ms (FindLiveObjects: 1.432250 ms CreateObjectMapping: 0.175875 ms MarkObjects: 9.436875 ms  DeleteObjects: 0.781791 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.546 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.174 seconds
+Domain Reload Profiling: 4723ms
+	BeginReloadAssembly (1014ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (50ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (235ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (100ms)
+	LoadAllAssembliesAndSetupDomain (361ms)
+		LoadAssemblies (959ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (33ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (3177ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2507ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (162ms)
+			ProcessInitializeOnLoadAttributes (2173ms)
+			ProcessInitializeOnLoadMethodAttributes (124ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 3.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3584.
+Memory consumption went from 131.4 MB to 131.4 MB.
+Total: 8.177541 ms (FindLiveObjects: 0.450916 ms CreateObjectMapping: 0.102250 ms MarkObjects: 7.506250 ms  DeleteObjects: 0.116542 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 996525.332879 seconds.
+  path: Assets/Scripts/GameManager/NewBehaviourScript.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/NewBehaviourScript.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f08253048d02b5a1db4cdd9cecb1ceb6') in 0.160551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.686 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.483 seconds
+Domain Reload Profiling: 5172ms
+	BeginReloadAssembly (858ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (78ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (234ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (108ms)
+	LoadAllAssembliesAndSetupDomain (655ms)
+		LoadAssemblies (966ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (129ms)
+			TypeCache.Refresh (74ms)
+				TypeCache.ScanAssembly (7ms)
+			ScanForSourceGeneratedMonoScriptInfo (35ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (3485ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2616ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (162ms)
+			ProcessInitializeOnLoadAttributes (2264ms)
+			ProcessInitializeOnLoadMethodAttributes (144ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 1.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3588.
+Memory consumption went from 136.0 MB to 135.9 MB.
+Total: 15.905083 ms (FindLiveObjects: 0.605292 ms CreateObjectMapping: 0.112250 ms MarkObjects: 14.586375 ms  DeleteObjects: 0.598666 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: a8f9838d0310b50ada75e794ad92f330 -> 08a0ede3a8d11f7486c99a977fd7db55
+========================================================================
+Received Import Request.
+  Time since last request: 25.707160 seconds.
+  path: Assets/Scripts/GameManager/NewBehaviourScript.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/NewBehaviourScript.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c5aa4672a8131af33191b6609030e449') in 0.044151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.753 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.910 seconds
+Domain Reload Profiling: 5667ms
+	BeginReloadAssembly (861ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (64ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (155ms)
+	RebuildCommonClasses (63ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (114ms)
+	LoadAllAssembliesAndSetupDomain (703ms)
+		LoadAssemblies (1161ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (69ms)
+			TypeCache.Refresh (25ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (3914ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2929ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (45ms)
+			SetLoadedEditorAssemblies (45ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (317ms)
+			ProcessInitializeOnLoadAttributes (2359ms)
+			ProcessInitializeOnLoadMethodAttributes (160ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 3.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3591.
+Memory consumption went from 140.7 MB to 140.7 MB.
+Total: 6.351000 ms (FindLiveObjects: 0.392625 ms CreateObjectMapping: 0.253583 ms MarkObjects: 5.600625 ms  DeleteObjects: 0.102917 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: a8f9838d0310b50ada75e794ad92f330 -> 08a0ede3a8d11f7486c99a977fd7db55
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.702 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.486 seconds
+Domain Reload Profiling: 6191ms
+	BeginReloadAssembly (768ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (70ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (179ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (570ms)
+	LoadAllAssembliesAndSetupDomain (1289ms)
+		LoadAssemblies (1549ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (136ms)
+			TypeCache.Refresh (82ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (30ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (3488ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2343ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (20ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (185ms)
+			ProcessInitializeOnLoadAttributes (1975ms)
+			ProcessInitializeOnLoadMethodAttributes (126ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 1.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3095 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3594.
+Memory consumption went from 145.7 MB to 145.7 MB.
+Total: 19.768208 ms (FindLiveObjects: 0.322125 ms CreateObjectMapping: 0.273959 ms MarkObjects: 18.562375 ms  DeleteObjects: 0.608417 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: 854be57a593bde74a27cc6a4e94cf976 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 569780fa8fec9867fd93cb97e01afa4b -> 08a0ede3a8d11f7486c99a977fd7db55
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.681 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.460 seconds
+Domain Reload Profiling: 7147ms
+	BeginReloadAssembly (785ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (68ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (180ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (97ms)
+	LoadAllAssembliesAndSetupDomain (741ms)
+		LoadAssemblies (1093ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (66ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (20ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (5464ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4281ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (200ms)
+			ProcessInitializeOnLoadAttributes (3595ms)
+			ProcessInitializeOnLoadMethodAttributes (420ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 2.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3095 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3597.
+Memory consumption went from 150.4 MB to 150.4 MB.
+Total: 20.719792 ms (FindLiveObjects: 1.245583 ms CreateObjectMapping: 0.251500 ms MarkObjects: 19.055667 ms  DeleteObjects: 0.165250 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: 854be57a593bde74a27cc6a4e94cf976 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: a8f9838d0310b50ada75e794ad92f330 -> 08a0ede3a8d11f7486c99a977fd7db55
+========================================================================
+Received Import Request.
+  Time since last request: 480.283486 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.464397 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.518058 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.068816 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.114757 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.006096 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.065342 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.002219 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.044204 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.001456 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100618 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000502 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.102151 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000566 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.092559 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.006388 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.078939 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000757 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.091842 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.001037 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100290 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.002042 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.048465 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000707 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.224418 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000583 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.067934 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000506 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.135164 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000991 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.101559 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000582 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.097973 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.001175 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.096691 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000521 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.098643 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000541 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.102687 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000681 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100606 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000781 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.105819 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000776 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.042291 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000574 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.107648 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000504 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.086901 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000496 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.101415 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000518 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.106333 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000529 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.092053 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.001321 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.097977 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000610 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.098844 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000658 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099137 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000798 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.101549 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000784 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.098706 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000565 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.088193 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000421 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.009338 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000508 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.092730 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.001729 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+  ERROR: Build asset version error: assets/scripts/gamemanager/audiomanager.cs in SourceAssetDB has modification time of '2024-12-19T07:20:09Z' while content on disk has modification time of '2024-12-19T07:20:16Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.256 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.169 seconds
+Domain Reload Profiling: 5427ms
+	BeginReloadAssembly (1129ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (81ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (303ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (401ms)
+	LoadAllAssembliesAndSetupDomain (646ms)
+		LoadAssemblies (1185ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (64ms)
+			TypeCache.Refresh (28ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (3171ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2284ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (173ms)
+			ProcessInitializeOnLoadAttributes (1946ms)
+			ProcessInitializeOnLoadMethodAttributes (117ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 1.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3600.
+Memory consumption went from 154.9 MB to 154.9 MB.
+Total: 3.792917 ms (FindLiveObjects: 0.230666 ms CreateObjectMapping: 0.087292 ms MarkObjects: 3.403042 ms  DeleteObjects: 0.070791 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AudioManager.cs: 179cff14d0c0c1b6f6563db6ac0e59c5 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: 854be57a593bde74a27cc6a4e94cf976 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 26c22d25843c112611b2e24875cffe0f -> 08a0ede3a8d11f7486c99a977fd7db55
+========================================================================
+Received Import Request.
+  Time since last request: 266.374807 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ad87bd499421ccef3c7227a0457e7fa4') in 0.138385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.835 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.729 seconds
+Domain Reload Profiling: 5567ms
+	BeginReloadAssembly (883ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (76ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (217ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (108ms)
+	LoadAllAssembliesAndSetupDomain (784ms)
+		LoadAssemblies (1196ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (61ms)
+			TypeCache.Refresh (24ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (3731ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2570ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (59ms)
+			SetLoadedEditorAssemblies (17ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (235ms)
+			ProcessInitializeOnLoadAttributes (2072ms)
+			ProcessInitializeOnLoadMethodAttributes (182ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 2.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3603.
+Memory consumption went from 159.7 MB to 159.7 MB.
+Total: 14.768583 ms (FindLiveObjects: 0.484416 ms CreateObjectMapping: 0.366833 ms MarkObjects: 13.780708 ms  DeleteObjects: 0.133709 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AudioManager.cs: 179cff14d0c0c1b6f6563db6ac0e59c5 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: 854be57a593bde74a27cc6a4e94cf976 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 26c22d25843c112611b2e24875cffe0f -> 08a0ede3a8d11f7486c99a977fd7db55
+========================================================================
+Received Import Request.
+  Time since last request: 101.875967 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9645989ddef51edb68340ddf2bd79754') in 0.125807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.170 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.761 seconds
+Domain Reload Profiling: 5934ms
+	BeginReloadAssembly (923ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (116ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (184ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (106ms)
+	LoadAllAssembliesAndSetupDomain (1077ms)
+		LoadAssemblies (1481ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (82ms)
+			TypeCache.Refresh (37ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (3763ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2784ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (25ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (185ms)
+			ProcessInitializeOnLoadAttributes (2387ms)
+			ProcessInitializeOnLoadMethodAttributes (145ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 2.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3606.
+Memory consumption went from 164.5 MB to 164.5 MB.
+Total: 10.806042 ms (FindLiveObjects: 0.313750 ms CreateObjectMapping: 0.230709 ms MarkObjects: 10.163375 ms  DeleteObjects: 0.097125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AudioManager.cs: 179cff14d0c0c1b6f6563db6ac0e59c5 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: 854be57a593bde74a27cc6a4e94cf976 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 26c22d25843c112611b2e24875cffe0f -> 08a0ede3a8d11f7486c99a977fd7db55
+========================================================================
+Received Import Request.
+  Time since last request: 128.718361 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e84e3e81b183be4951b76dd806c17d48') in 0.125133 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.034 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.799 seconds
+Domain Reload Profiling: 7838ms
+	BeginReloadAssembly (1906ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (86ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (263ms)
+	RebuildCommonClasses (116ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (340ms)
+	LoadAllAssembliesAndSetupDomain (1650ms)
+		LoadAssemblies (2856ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (173ms)
+			TypeCache.Refresh (76ms)
+				TypeCache.ScanAssembly (3ms)
+			ScanForSourceGeneratedMonoScriptInfo (65ms)
+			ResolveRequiredComponents (30ms)
+	FinalizeReload (3802ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2655ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (195ms)
+			ProcessInitializeOnLoadAttributes (2245ms)
+			ProcessInitializeOnLoadMethodAttributes (156ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 2.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3609.
+Memory consumption went from 169.3 MB to 169.2 MB.
+Total: 8.699000 ms (FindLiveObjects: 0.493459 ms CreateObjectMapping: 0.256959 ms MarkObjects: 7.835750 ms  DeleteObjects: 0.111417 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AudioManager.cs: 179cff14d0c0c1b6f6563db6ac0e59c5 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: 854be57a593bde74a27cc6a4e94cf976 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 26c22d25843c112611b2e24875cffe0f -> 08a0ede3a8d11f7486c99a977fd7db55
+========================================================================
+Received Import Request.
+  Time since last request: 34.008921 seconds.
+  path: Assets/Scripts/GameManager/AudioManager.cs
+  artifactKey: Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager/AudioManager.cs using Guid(9ad178f403bf240339ec036dcbd80457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '220a0de5361eaf42bb00b037f412d07e') in 0.005750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.290 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.925 seconds
+Domain Reload Profiling: 4219ms
+	BeginReloadAssembly (533ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (53ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (107ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (602ms)
+		LoadAssemblies (830ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (52ms)
+			TypeCache.Refresh (22ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (2927ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2136ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (158ms)
+			ProcessInitializeOnLoadAttributes (1813ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 1.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3612.
+Memory consumption went from 174.2 MB to 174.2 MB.
+Total: 12.684709 ms (FindLiveObjects: 0.469416 ms CreateObjectMapping: 0.140375 ms MarkObjects: 11.999041 ms  DeleteObjects: 0.074458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AudioManager.cs: 179cff14d0c0c1b6f6563db6ac0e59c5 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: 854be57a593bde74a27cc6a4e94cf976 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 26c22d25843c112611b2e24875cffe0f -> 08a0ede3a8d11f7486c99a977fd7db55
+========================================================================
+Received Import Request.
+  Time since last request: 485.898245 seconds.
+  path: Assets/Audio
+  artifactKey: Guid(638411ba04da04c4faf67b28245cf565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio using Guid(638411ba04da04c4faf67b28245cf565) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '538c177d80a1e09db72562c4118a13f0') in 0.132328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 26.637725 seconds.
+  path: Assets/Audio/Audio.mixer
+  artifactKey: Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Audio.mixer using Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 86.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'c264c1cf4c0268a0c988431d2f4eae1f') in 0.531484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 10.046207 seconds.
+  path: Assets/Audio/AudioMixer.mixer
+  artifactKey: Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/AudioMixer.mixer using Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 14.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '7e58af2399522396c4d95f21e9f05c1a') in 0.049691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 30.914102 seconds.
+  path: Assets/Audio/AudioMixer.mixer
+  artifactKey: Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/AudioMixer.mixer using Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 3.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '47ea61ea03359713010ee009d25e6ad7') in 0.019223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 5.883066 seconds.
+  path: Assets/Audio/AudioMixer.mixer
+  artifactKey: Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/AudioMixer.mixer using Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 3.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '8f2a5ea892afd79ac7eeaf7aea507003') in 0.024444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.944181 seconds.
+  path: Assets/Audio/AudioMixer.mixer
+  artifactKey: Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/AudioMixer.mixer using Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 4.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'ed9416a281eb6a431e08a609938a06ff') in 0.012066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 8.859054 seconds.
+  path: Assets/Audio/AudioMixer.mixer
+  artifactKey: Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/AudioMixer.mixer using Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 1.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'b53b4ee9f7d2860f6543479a76477abb') in 0.008065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 5.998394 seconds.
+  path: Assets/Audio/AudioMixer.mixer
+  artifactKey: Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/AudioMixer.mixer using Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 14.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '3b630887fc3107ba57bd4601ef71c8b2') in 0.040427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 14.665186 seconds.
+  path: Assets/Audio/AudioMixer.mixer
+  artifactKey: Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/AudioMixer.mixer using Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 4.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'e980796ae86dcaaf40498ec80509bbd9') in 0.048632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 233.878978 seconds.
+  path: Assets/Audio/AudioMixer.mixer
+  artifactKey: Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/AudioMixer.mixer using Guid(589b0006b40784af0b929cf52193af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 24.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '2980d9418657c9676b3e69632a2d482a') in 0.070777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8

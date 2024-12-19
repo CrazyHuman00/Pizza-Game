@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace GameManager
 {
+    /// <summary>
+    /// UIの管理をする。
+    /// </summary>
     public class UIManager : MonoBehaviour
     {
         [SerializeField] private GameObject menuPanel;
