@@ -10,18 +10,31 @@ namespace GameManager
     public class AudioManager : MonoBehaviour
     {
         [SerializeField] private AudioMixer audioMixer;
-        [SerializeField] private Slider soundEffectVolumeSlider;
-        [SerializeField] private Slider musicVolumeSlider;
+        [SerializeField] private Slider bgmVolumeSlider;
+        [SerializeField] private Slider sEVolumeSlider;
 
-        // Update is called once per frame
-        void Update()
+        private void Start()
         {
-        
+            bgmVolumeSlider.onValueChanged.AddListener(SetAudioMixerBGM);
+            sEVolumeSlider.onValueChanged.AddListener(SetAudioMixerSe);
         }
 
-        public void PlaySoundEffect(AudioClip clip)
+        private void SetAudioMixerBGM(float bgmVolume)
         {
-            
+            audioMixer.SetFloat("BGM", AdjustStepVolume(bgmVolume));
+            Debug.Log($"BGM Volume: {AdjustStepVolume(bgmVolume)}");
+        }
+
+        private void SetAudioMixerSe(float sEVolume)
+        {
+            audioMixer.SetFloat("BGM", AdjustStepVolume(sEVolume));
+            Debug.Log($"BGM Volume: {AdjustStepVolume(sEVolume)}");
+        }
+
+        private float AdjustStepVolume(float volume)
+        {
+            volume /= 5;
+            return Mathf.Clamp(Mathf.Log10(volume) * 20f,-80f,0f);
         }
     }
 }
