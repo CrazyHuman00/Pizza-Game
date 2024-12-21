@@ -11,19 +11,19 @@ namespace InGame.Presenter
     {
         [SerializeField] private PizzaPlacementModel model;
         [SerializeField] private PizzaArrangementView view;
+        [SerializeField] private GameObject parentObject;
+        [SerializeField] private int parentNumber;
 
         private void Start()
         {
             PlacePizzas();
         }
 
-        private void PlacePizzas()
+        public void PlacePizzas()
         {
-            for (var i = 0; i < model.PizzaCount; i++)
-            {
-                var place = model.GetPizzaPosition(i);
-                view.ArrangePizzaSlices(place);
-            }
+            var place = model.GetPizzaPosition(parentNumber);
+            view.SetParentTransform(parentObject.transform);
+            view.ArrangePizzaSlices(place);
         }
     }
 }

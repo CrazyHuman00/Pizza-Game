@@ -31,7 +31,7 @@ namespace GameManager
             Debug.Log($"BGM Volume: {AdjustStepVolume(sEVolume)}");
         }
 
-        private float AdjustStepVolume(float volume)
+        private static float AdjustStepVolume(float volume)
         {
             volume /= 5;
             return Mathf.Clamp(Mathf.Log10(volume) * 20f,-80f,0f);
