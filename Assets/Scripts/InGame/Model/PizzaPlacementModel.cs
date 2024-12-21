@@ -1,42 +1,46 @@
-﻿using UnityEngine;
-using UnityEngine.Serialization;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace InGame.Model
 {
     /// <summary>
-    /// ピザの座標のmodel
+    /// ピザそれぞれの座標の情報。
     /// </summary>
-    public class PizzaPlacementModel : MonoBehaviour
-    {
+    public class PizzaPlacementModel
+    { 
         [System.Serializable]
         public struct PizzaPlacementData
         {
-            public Vector2 position;
+            public Vector3 position;
             public float rotationAngle;
         }
+        
+        private readonly List<PizzaPlacementData> _placements;
+        private int PizzaCount => _placements.Count;
 
-        [SerializeField] private PizzaPlacementData[] placements;
-
-        public int PizzaCount => placements.Length;
-
+        public PizzaPlacementModel()
+        {
+            _placements = new List<PizzaPlacementData>();
+        }
+        
         public Vector2 GetPizzaPosition(int index)
         {
-            if (index >= 0 && index < placements.Length)
+            if (index >= 0 && index < PizzaCount)
             {
-                return placements[index].position;
+                return _placements[index].position;
             }
 
             return Vector2.zero;
         }
 
-        public float GetPizzaRotation(int index)
+        public void AddPizzaPlacement(Vector3 position, float rotationAngle)
         {
-            if (index >= 0 && index < placements.Length)
+            var newPlacement = new PizzaPlacementData
             {
-                return placements[index].rotationAngle;
-            }
-
-            return 0f;
+                position = position,
+                rotationAngle = rotationAngle
+            };
+            _placements.Add(newPlacement);
         }
     }
 }

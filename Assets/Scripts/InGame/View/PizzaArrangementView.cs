@@ -4,6 +4,9 @@ using Vector2 = UnityEngine.Vector2;
 
 namespace InGame.View
 {
+    /// <summary>
+    /// PizzaPlacementのView。
+    /// </summary>
     public class PizzaArrangementView : MonoBehaviour
     {
         [SerializeField] private GameObject pizzaPiecePrefab;
@@ -11,13 +14,8 @@ namespace InGame.View
         private Transform _parentTransform;
 
         private const int NumberOfSlices = 8;
-        private const float AngleStep = 360f / NumberOfSlices;
-
-        public void SetParentTransform(Transform parentTransform)
-        {
-            this._parentTransform = parentTransform;
-        }
-
+        private const float AngleStep = 45f;
+        
         public void ArrangePizzaSlices(Vector2 parentPosition)
         {
             var random = new System.Random();
@@ -37,10 +35,21 @@ namespace InGame.View
                     parentPosition.y + centerPoint.x * Mathf.Sin(radians) + centerPoint.y * Mathf.Cos(radians)
                 );
 
+                prefab.name = "PizzaPiece" + i.ToString();
                 prefabRectTransform.anchoredPosition = rotatedPosition;
                 prefabRectTransform.rotation = Quaternion.Euler(0, 0, angle);
                 prefabRectTransform.pivot = new Vector2(0.5f, 0.5f);
             }
+        }
+
+        public void SetParentTransform(Transform parent)
+        {
+            _parentTransform = parent;
+        }
+
+        public Transform GetParentTransform()
+        {
+            return _parentTransform;
         }
 
         public void DeleteAllPizzaSlices()
