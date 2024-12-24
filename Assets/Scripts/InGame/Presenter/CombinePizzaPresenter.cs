@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using InGame.Model;
 using InGame.View;
 using UnityEngine.Serialization;
@@ -7,35 +8,45 @@ namespace InGame.Presenter
 {
     /// <summary>
     /// ピザを組み合わせるときに使うPresenter。
-    /// modelからピザのピース情報を取得し、メイン配置したものに配置できるかを確かめる。
-    /// 配置が可能ならば、viewに反映させピザを配置し、modelを更新する。
+    /// サブピザをクリックしたときにメインピザに反映できるようにViewに反映する。
+    /// そのあとサブピザにあった子ピザたちをメインピザのリストに格納する。
     /// </summary>
     public class CombinePizzaPresenter : MonoBehaviour
     {
         private PizzaPiecesModel _pizzaPiecesModel;
         [SerializeField] private CombinedPizzaView combinedPizzaView;
         [SerializeField] private Transform mainPizzaTransform;
+        [SerializeField] private PizzaManager pizzaManager;
 
         private void Start()
         {
             _pizzaPiecesModel = new PizzaPiecesModel();
             InitializePizzaPieces();
         }
-
+        
         private void InitializePizzaPieces()
         {
-            foreach (Transform child in this.transform)
+            var allPizzaPieces = pizzaManager.GetSubPizzas();
+            foreach (var piece in allPizzaPieces)
             {
-                var o = child.gameObject;
-                _pizzaPiecesModel.SetPizzaPieces(o, o.name);
-                
+                _pizzaPiecesModel.SetMainPizzaPieces(piece.transform);
             }
         }
         
         public void OnClickPizza(GameObject parentPizza)
         {
+            foreach (Transform child in parentPizza.transform)
+            {
+                if (_pizzaPiecesModel.ContainsPizzaPiece(child.name))
+                {
+                    Debug.Log("重複してます。");
+                    return;
+                }
+            }
+
             combinedPizzaView.PutAllPizzaToMainPizza(parentPizza.transform, mainPizzaTransform);
+            _pizzaPiecesModel.SetMainPizzaPieces(parentPizza.transform);
+            
         }
     }
-    
 }

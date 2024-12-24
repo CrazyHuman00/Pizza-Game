@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace InGame.View
 {
@@ -21,12 +20,27 @@ namespace InGame.View
         {
             RotateRightPizzaSlices();
         }
+        
+        private static string RenamePizzaPiece(string pizzaName, int pieceIndex)
+        {
+            var numberPart = pizzaName.Replace("PizzaPiece", "");
+            var pieceNumber = int.Parse(numberPart);
+            
+            pieceNumber += pieceIndex;
+            pieceNumber %= 8;
+
+            if (pieceNumber < 0) { pieceNumber = 7; }
+            if (pieceNumber > 7) { pieceNumber = 0; }
+            
+            return "PizzaPiece" + pieceNumber.ToString();
+        }
 
         private void RotateLeftPizzaSlices()
         {
             var parentTransform = pizzaArrangementView.GetParentTransform();
             foreach (Transform child in parentTransform)
             {
+                child.name = RenamePizzaPiece(child.name,-1);
                 RotateAroundReference(child, -RotationAngle);
             }
         }
@@ -36,6 +50,7 @@ namespace InGame.View
             var parentTransform = pizzaArrangementView.GetParentTransform();
             foreach (Transform child in parentTransform)
             {
+                child.name = RenamePizzaPiece(child.name,1);
                 RotateAroundReference(child, RotationAngle);
             }
         }
