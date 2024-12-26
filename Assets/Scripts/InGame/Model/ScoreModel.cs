@@ -2,11 +2,16 @@
 {
     public class ScoreModel
     {
-        private int _score;
+        private int _score = 0;
 
-        public void AddScore()
+        public ScoreModel(int score)
         {
-            _score++;
+            _score = score;
+        }
+
+        public void AddScore(int score)
+        {
+            _score += score;
         }
 
         public int GetScore()

@@ -11,8 +11,8 @@ namespace InGame.View
     {
         [SerializeField] private GameObject pizzaPiecePrefab;
         [SerializeField] private Vector2 centerPoint;
+        
         private Transform _parentTransform;
-
         private const int NumberOfSlices = 8;
         private const float AngleStep = 45f;
         

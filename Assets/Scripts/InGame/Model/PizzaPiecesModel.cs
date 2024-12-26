@@ -50,6 +50,15 @@ namespace InGame.Model
             }
         }
         
+        public void AddPizzaPiece(Transform pizzaPiece)
+        {
+            _mainPizzaPiece.Add(new PizzaPieceData
+            {
+                pizzaPiecesObject = pizzaPiece.gameObject,
+                pizzaPiecesName = pizzaPiece.name
+            });
+        }
+        
         public bool ContainsPizzaPiece(string pizzaPieceName)
         {
             return _mainPizzaPiece.Any(p => p.pizzaPiecesName == pizzaPieceName);
