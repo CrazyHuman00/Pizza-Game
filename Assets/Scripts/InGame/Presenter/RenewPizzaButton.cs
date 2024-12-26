@@ -1,8 +1,7 @@
-using System;
+using InGame.View;
 using UnityEngine;
-using InGame.Presenter;
 
-namespace InGame.View
+namespace InGame.Presenter
 {
     /// <summary>
     /// ピザを再配置させるボタン。

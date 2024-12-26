@@ -9,12 +9,7 @@ namespace InGame.Presenter
     {
         private PizzaPiecesModel _pizzaPiecesModel;
         [SerializeField] private GameObject[] subPizzas;
-
-        private void Start()
-        {
-            
-        }
-
+        
         public GameObject[] GetSubPizzas()
         {
             return subPizzas;

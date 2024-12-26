@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using InGame.View;
+using UnityEngine;
 
-namespace InGame.View
+namespace InGame.Presenter
 {
     /// <summary>
     /// ピザを回転させるボタン。

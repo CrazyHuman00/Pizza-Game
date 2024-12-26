@@ -22,7 +22,7 @@ namespace InGame.Model
         /// <summary>
         /// メインピザのリスト
         /// </summary>
-        private List<PizzaPieceData> _mainPizzaPiece = new List<PizzaPieceData>();
+        private readonly List<PizzaPieceData> _mainPizzaPiece = new();
         
         /// <summary>
         /// メインピザのリストを返す。
