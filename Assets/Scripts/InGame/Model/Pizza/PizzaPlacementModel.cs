@@ -6,7 +6,7 @@ namespace InGame.Model.Pizza
     /// <summary>
     /// ピザそれぞれの座標の情報。
     /// </summary>
-    public class PizzaPlacementModel
+    public class PizzaPlacementModel : IPizzaPlacement
     { 
         /// <summary>
         /// PizzaPlacementの情報

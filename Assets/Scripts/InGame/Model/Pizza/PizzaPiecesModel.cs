@@ -7,7 +7,7 @@ namespace InGame.Model.Pizza
     /// <summary>
     /// なんのピザのピースを持っているかの情報。
     /// </summary>
-    public class PizzaPiecesModel
+    public class PizzaPiecesModel : IPizzaPiece
     {
         /// <summary>
         /// PizzaPieceの構造体
@@ -24,8 +24,10 @@ namespace InGame.Model.Pizza
         /// メインピザのリスト。
         /// </summary>
         private readonly List<PizzaPieceData> _mainPizzaPiece = new();
-        
-        
+
+        private IPizzaPiece _pizzaPieceImplementation;
+
+
         /// <summary>
         /// メインピザのリストを返す。
         /// </summary>
