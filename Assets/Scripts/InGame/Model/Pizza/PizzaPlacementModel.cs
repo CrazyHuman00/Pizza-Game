@@ -15,7 +15,6 @@ namespace InGame.Model.Pizza
         public struct PizzaPlacementData
         {
             public Vector3 position;
-            public float rotationAngle;
         }
         
         /// <summary>
@@ -49,13 +48,11 @@ namespace InGame.Model.Pizza
         /// ピザの場所をリストに追加する。
         /// </summary>
         /// <param name="position"></param>
-        /// <param name="rotationAngle"></param>
-        public void AddPizzaPlacement(Vector3 position, float rotationAngle)
+        public void AddPizzaPlacement(Vector3 position)
         {
             var newPlacement = new PizzaPlacementData
             {
                 position = position,
-                rotationAngle = rotationAngle
             };
             _placements.Add(newPlacement);
         }

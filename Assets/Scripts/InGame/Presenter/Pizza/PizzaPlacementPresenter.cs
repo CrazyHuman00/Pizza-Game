@@ -1,5 +1,4 @@
 ﻿using InGame.Model.Pizza;
-using InGame.View;
 using InGame.View.Pizza;
 using UnityEngine;
 
@@ -23,11 +22,19 @@ namespace InGame.Presenter.Pizza
             PlacePizzas();
         }
 
+        
+        /// <summary>
+        /// 初期設定。
+        /// </summary>
         private void InitializePizzaPlacements()
         {
-            _model.AddPizzaPlacement(parentPositions, 0);
+            _model.AddPizzaPlacement(parentPositions);
         }
 
+        
+        /// <summary>
+        /// ピザの配置。
+        /// </summary>
         public void PlacePizzas()
         {
             pizzaArrangementView.SetParentTransform(parentObject.transform);

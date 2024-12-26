@@ -15,14 +15,16 @@ namespace InGame.Model.Pizza
         [System.Serializable]
         public struct PizzaPieceData
         {
-            public GameObject pizzaPiecesObject;
+            public GameObject pizzaPiecesPrefab;
             public string pizzaPiecesName;
         }
         
+        
         /// <summary>
-        /// メインピザのリスト
+        /// メインピザのリスト。
         /// </summary>
         private readonly List<PizzaPieceData> _mainPizzaPiece = new();
+        
         
         /// <summary>
         /// メインピザのリストを返す。
@@ -33,6 +35,7 @@ namespace InGame.Model.Pizza
             return _mainPizzaPiece;
         }
 
+        
         /// <summary>
         /// メインピザのリストに情報をセットする。
         /// </summary>
@@ -43,27 +46,42 @@ namespace InGame.Model.Pizza
             {
                 var newPizzaPiece = new PizzaPieceData
                 {
-                    pizzaPiecesObject = child.gameObject,
+                    pizzaPiecesPrefab = child.gameObject,
                     pizzaPiecesName = child.name,
                 };
                 _mainPizzaPiece.Add(newPizzaPiece);
             }
         }
         
+        
+        /// <summary>
+        /// ピザの子オブジェクトをリストに追加する。
+        /// </summary>
+        /// <param name="pizzaPiece"></param>
         public void AddPizzaPiece(Transform pizzaPiece)
         {
             _mainPizzaPiece.Add(new PizzaPieceData
             {
-                pizzaPiecesObject = pizzaPiece.gameObject,
+                pizzaPiecesPrefab = pizzaPiece.gameObject,
                 pizzaPiecesName = pizzaPiece.name
             });
         }
         
+        
+        /// <summary>
+        /// リスト内に同じオブジェクトがあるかの判定。
+        /// </summary>
+        /// <param name="pizzaPieceName"></param>
+        /// <returns></returns>
         public bool ContainsPizzaPiece(string pizzaPieceName)
         {
             return _mainPizzaPiece.Any(p => p.pizzaPiecesName == pizzaPieceName);
         }
         
+        
+        /// <summary>
+        /// メインピザの削除。
+        /// </summary>
         public void ClearMainPizzaPieces()
         {
             _mainPizzaPiece.Clear();

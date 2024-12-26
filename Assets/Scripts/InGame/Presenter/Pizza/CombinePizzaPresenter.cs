@@ -1,9 +1,8 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using InGame.Model.Pizza;
-using InGame.View;
 using InGame.View.Pizza;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace InGame.Presenter.Pizza
 {
@@ -29,14 +28,14 @@ namespace InGame.Presenter.Pizza
             _pizzaPiecesModel.ClearMainPizzaPieces();
         }
         
+        
+        /// <summary>
+        /// サブピザをクリックしたときの処理。
+        /// </summary>
+        /// <param name="parentPizza"></param>
         public void OnClickPizza(GameObject parentPizza)
         {
-            // 重複判定
-            if (parentPizza.transform.Cast<Transform>().Any(child => _pizzaPiecesModel.ContainsPizzaPiece(child.name)))
-            {
-                Debug.Log("重複してます。");
-                return;
-            }
+            // TODO: 重複判定
 
             // メインピザに配置する、リストに追加する。
             combinedPizzaView.PutAllPizzaToMainPizza(parentPizza.transform, mainPizzaTransform);

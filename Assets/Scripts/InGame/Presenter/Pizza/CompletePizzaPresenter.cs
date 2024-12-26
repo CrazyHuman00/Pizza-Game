@@ -1,4 +1,5 @@
-﻿using InGame.GameManager;
+﻿using System.Linq;
+using InGame.GameManager;
 using InGame.Model.Pizza;
 using UnityEngine;
 
@@ -26,9 +27,12 @@ namespace InGame.Presenter.Pizza
         {
             if (_pizzaPiecesModel.GetMainPizzaPieces().Count != 8) return;
             
+            // 金のピザピースが何個含まれているかチェック
+            var goldPizzaPieceCount = _pizzaPiecesModel.GetMainPizzaPieces().Count(piece => piece.pizzaPiecesName.Contains("GoldPizzaPiece"));
+
             // スコアに加算
-            scoreManager.AddScore(10);
-                
+            scoreManager.AddScore(10 + 10 * goldPizzaPieceCount);
+
             // メインピザのリストを全て消す
             _pizzaPiecesModel.ClearMainPizzaPieces();
             
