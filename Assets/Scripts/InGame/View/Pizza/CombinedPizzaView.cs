@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace InGame.View
+namespace InGame.View.Pizza
 {
     /// <summary>
     /// メインピザに配置するView。

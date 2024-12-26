@@ -1,5 +1,6 @@
 using System;
 using GameManager;
+using InGame.GameManager;
 using TMPro;
 using UnityEngine;
 
@@ -9,9 +10,6 @@ namespace InGame.View
     {
         [SerializeField] private TextMeshProUGUI scoreText;
 
-        private void Start()
-        {
-            scoreText.text = ScoreManager.Score.ToString();
-        }
+        
     }
 }

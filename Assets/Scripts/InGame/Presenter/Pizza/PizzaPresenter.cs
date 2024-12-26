@@ -1,11 +1,9 @@
-﻿using System;
-using InGame.Model;
-using InGame.View;
+﻿using InGame.Model.Pizza;
 using UnityEngine;
 
-namespace InGame.Presenter
+namespace InGame.Presenter.Pizza
 {
-    public class PizzaManager : MonoBehaviour
+    public class PizzaPresenter : MonoBehaviour
     {
         private PizzaPiecesModel _pizzaPiecesModel;
         [SerializeField] private GameObject[] subPizzas;

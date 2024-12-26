@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace InGame.Model
+namespace InGame.Model.Pizza
 {
     /// <summary>
     /// なんのピザのピースを持っているかの情報。

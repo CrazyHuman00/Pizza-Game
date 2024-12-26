@@ -1,13 +1,16 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace InGame.Model
+namespace InGame.Model.Pizza
 {
     /// <summary>
     /// ピザそれぞれの座標の情報。
     /// </summary>
     public class PizzaPlacementModel
     { 
+        /// <summary>
+        /// PizzaPlacementの情報
+        /// </summary>
         [System.Serializable]
         public struct PizzaPlacementData
         {
@@ -15,14 +18,22 @@ namespace InGame.Model
             public float rotationAngle;
         }
         
-        private readonly List<PizzaPlacementData> _placements;
+        /// <summary>
+        /// ピザの場所の情報
+        /// </summary>
+        private readonly List<PizzaPlacementData> _placements = new();
+        
+        /// <summary>
+        /// ピザのカウント
+        /// </summary>
         private int PizzaCount => _placements.Count;
 
-        public PizzaPlacementModel()
-        {
-            _placements = new List<PizzaPlacementData>();
-        }
         
+        /// <summary>
+        /// indexをもとに子ピザを取得する。
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
         public Vector2 GetPizzaPosition(int index)
         {
             if (index >= 0 && index < PizzaCount)
@@ -33,6 +44,12 @@ namespace InGame.Model
             return Vector2.zero;
         }
 
+        
+        /// <summary>
+        /// ピザの場所をリストに追加する。
+        /// </summary>
+        /// <param name="position"></param>
+        /// <param name="rotationAngle"></param>
         public void AddPizzaPlacement(Vector3 position, float rotationAngle)
         {
             var newPlacement = new PizzaPlacementData

@@ -1,11 +1,11 @@
 using UnityEngine;
 
-namespace GameManager
+namespace Title.GameManager
 {
     /// <summary>
     /// UIの管理をする。
     /// </summary>
-    public class UIManager : MonoBehaviour
+    public class TitleUIManager : MonoBehaviour
     {
         [SerializeField] private GameObject menuPanel;
         [SerializeField] private GameObject loadingPanel;
@@ -13,20 +13,20 @@ namespace GameManager
 
         private void Start()
         {
-            BackToMenu();
+            BackToMenuUI();
         }
-
-        public void SelectSettingDescription()
-        {
-            menuPanel.SetActive(false);
-            settingPanel.SetActive(true);
-        }
-
-        public void BackToMenu()
+        
+        private void BackToMenuUI()
         {
             menuPanel.SetActive(true);
             loadingPanel.SetActive(false);
             settingPanel.SetActive(false);
+        }
+
+        public void SelectSettingDescriptionUI()
+        {
+            menuPanel.SetActive(false);
+            settingPanel.SetActive(true);
         }
     }
 }

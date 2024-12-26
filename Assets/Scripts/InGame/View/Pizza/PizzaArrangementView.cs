@@ -2,7 +2,7 @@ using UnityEngine;
 using Quaternion = UnityEngine.Quaternion;
 using Vector2 = UnityEngine.Vector2;
 
-namespace InGame.View
+namespace InGame.View.Pizza
 {
     /// <summary>
     /// PizzaPlacementのView。
@@ -18,12 +18,11 @@ namespace InGame.View
         
         public void ArrangePizzaSlices(Vector2 parentPosition)
         {
-            var random = new System.Random();
             var slicePlaced = 0;
             
             for (var i = 0; i < NumberOfSlices; i++)
             {
-                if (random.NextDouble() < 0.7) { continue; }
+                if (Random.Range(0, 100) >= 20) { continue; }
                 
                 var angle = i * AngleStep;
                 var radians = angle * Mathf.Deg2Rad;

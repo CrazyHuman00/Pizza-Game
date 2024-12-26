@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 5397885}
   - component: {fileID: 5397887}
   - component: {fileID: 5397886}
-  - component: {fileID: 5397888}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -257,19 +256,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5397884}
   m_CullTransparentMesh: 1
---- !u!114 &5397888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5397884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbc9853fcf6f47d9b07c45b908f58211, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 5397886}
 --- !u!1 &44396592
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,83 +722,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a85a5c480648819d46455b9ab03bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPizzaTransform: {fileID: 1217856491}
   combinedPizzaView: {fileID: 1217856492}
-  pizzaManager: {fileID: 1232927938}
+  mainPizzaTransform: {fileID: 1217856491}
+  pizzaPresenter: {fileID: 1232927938}
   pizzaPlacementPresenter: {fileID: 153691147}
   pizzaArrangementView: {fileID: 153691146}
---- !u!1 &173488035
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 173488036}
-  - component: {fileID: 173488037}
-  - component: {fileID: 173488038}
-  - component: {fileID: 173488039}
-  m_Layer: 0
-  m_Name: ScoreManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &173488036
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173488035}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 639.23645, y: 362.2961, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &173488037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173488035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29cbedbf3d53407a9d7838b35779832b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &173488038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173488035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a2da521add4faf99d640ab88553fc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreView: {fileID: 5397888}
---- !u!114 &173488039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173488035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbc9853fcf6f47d9b07c45b908f58211, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 5397886}
 --- !u!1 &248672896
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +739,7 @@ GameObject:
   - component: {fileID: 248672899}
   - component: {fileID: 248672898}
   m_Layer: 5
-  m_Name: TimeText
+  m_Name: InGameCountDownText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1139,9 +1053,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c410b72b94fe46bb8f99c150c552aeb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialPanel: {fileID: 732681365}
   inGamePanel: {fileID: 1476674275}
+  finishedPanel: {fileID: 320528036}
   loadingPanel: {fileID: 2066414245}
-  startPanel: {fileID: 732681365}
 --- !u!1 &281741081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1205,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pizzaArrangementView: {fileID: 1292754635}
   referenceObject: {fileID: 78862612}
+--- !u!1 &320528036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 320528037}
+  - component: {fileID: 320528039}
+  - component: {fileID: 320528038}
+  m_Layer: 5
+  m_Name: FinishedPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &320528037
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320528036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 818026019}
+  m_Father: {fileID: 328168304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &320528038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320528036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &320528039
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320528036}
+  m_CullTransparentMesh: 1
 --- !u!1 &328168300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,10 +1329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1385,9 +1376,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1316176701}
-  - {fileID: 2066414246}
   - {fileID: 732681366}
   - {fileID: 1476674276}
+  - {fileID: 320528037}
+  - {fileID: 2066414246}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1559,9 +1551,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a85a5c480648819d46455b9ab03bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPizzaTransform: {fileID: 1217856491}
   combinedPizzaView: {fileID: 1217856492}
-  pizzaManager: {fileID: 1232927938}
+  mainPizzaTransform: {fileID: 1217856491}
+  pizzaPresenter: {fileID: 1232927938}
   pizzaPlacementPresenter: {fileID: 450601261}
   pizzaArrangementView: {fileID: 450601260}
 --- !u!1 &452580162
@@ -2151,33 +2143,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 585250654}
-  - component: {fileID: 585250653}
+  - component: {fileID: 585250655}
   m_Layer: 5
-  m_Name: TimeManager
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &585250653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 585250652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 388b88b5f37d4cc18024f750ba7cc6a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneLoader: {fileID: 631297935}
-  uiManager: {fileID: 276157057}
-  countdown: 3
-  gameTime: 10
-  countdownText: {fileID: 971846973}
-  gameTimeText: {fileID: 248672898}
-  finishedText: {fileID: 818026017}
 --- !u!224 &585250654
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2194,9 +2167,26 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 638.5, y: 359.25}
+  m_AnchoredPosition: {x: 502, y: 300}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &585250655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585250652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388b88b5f37d4cc18024f750ba7cc6a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialTime: 3
+  inGameCountDownTime: 60
+  initialTimeText: {fileID: 971846973}
+  inGameCountDownText: {fileID: 248672898}
+  inGameUIManager: {fileID: 276157057}
 --- !u!1 &585772629
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2521,7 @@ GameObject:
   - component: {fileID: 732681368}
   - component: {fileID: 732681367}
   m_Layer: 5
-  m_Name: StartPanel
+  m_Name: InitialPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2554,8 +2544,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -6.897583, y: 0.99069214}
+  m_SizeDelta: {x: 80.8, y: 37.4333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &732681367
 MonoBehaviour:
@@ -2901,7 +2891,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Finish!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2985,16 +2975,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818026016}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1476674276}
+  m_Father: {fileID: 320528037}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000073150746, y: -0.000036575373}
   m_SizeDelta: {x: 455.2285, y: 149.3885}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &923559655
@@ -3545,7 +3535,7 @@ GameObject:
   - component: {fileID: 971846972}
   - component: {fileID: 971846973}
   m_Layer: 5
-  m_Name: CountdownTImeText
+  m_Name: InitialTimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4082,9 +4072,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a85a5c480648819d46455b9ab03bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPizzaTransform: {fileID: 1217856491}
   combinedPizzaView: {fileID: 1217856492}
-  pizzaManager: {fileID: 1232927938}
+  mainPizzaTransform: {fileID: 1217856491}
+  pizzaPresenter: {fileID: 1232927938}
   pizzaPlacementPresenter: {fileID: 1048802647}
   pizzaArrangementView: {fileID: 1048802646}
 --- !u!1 &1124504121
@@ -4522,9 +4512,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a85a5c480648819d46455b9ab03bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPizzaTransform: {fileID: 1217856491}
   combinedPizzaView: {fileID: 1217856492}
-  pizzaManager: {fileID: 1232927938}
+  mainPizzaTransform: {fileID: 1217856491}
+  pizzaPresenter: {fileID: 1232927938}
   pizzaPlacementPresenter: {fileID: 1181726794}
   pizzaArrangementView: {fileID: 1181726793}
 --- !u!1 &1217856490
@@ -4645,7 +4635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232927935}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 671.47516, y: 274.53494, z: 0.50380105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4682,9 +4672,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7be56408a5543afb86bcfdb11e6b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pizzaManager: {fileID: 1232927938}
+  pizzaPresenter: {fileID: 1232927938}
   mainPizzaTransform: {fileID: 1217856491}
-  scorePresenter: {fileID: 173488038}
+  scoreManager: {fileID: 0}
 --- !u!1 &1245058219
 GameObject:
   m_ObjectHideFlags: 0
@@ -5100,9 +5090,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a85a5c480648819d46455b9ab03bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPizzaTransform: {fileID: 1217856491}
   combinedPizzaView: {fileID: 1217856492}
-  pizzaManager: {fileID: 1232927938}
+  mainPizzaTransform: {fileID: 1217856491}
+  pizzaPresenter: {fileID: 1232927938}
   pizzaPlacementPresenter: {fileID: 1292754636}
   pizzaArrangementView: {fileID: 1292754635}
 --- !u!1 &1312933543
@@ -5273,8 +5263,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.7635, y: 2.2961}
-  m_SizeDelta: {x: 1350, y: 755}
+  m_AnchoredPosition: {x: -0.77282, y: 2.2952}
+  m_SizeDelta: {x: 1428, y: 799.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316176702
 MonoBehaviour:
@@ -5427,13 +5417,12 @@ RectTransform:
   - {fileID: 585772630}
   - {fileID: 5397885}
   - {fileID: 248672897}
-  - {fileID: 818026019}
   m_Father: {fileID: 328168304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000061035156, y: -0.000030517578}
+  m_SizeDelta: {x: 0, y: 0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476674277
 MonoBehaviour:
@@ -6768,8 +6757,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.7635498, y: 2.2960815}
-  m_SizeDelta: {x: 70, y: 35}
+  m_AnchoredPosition: {x: -0.7636719, y: 2.2961426}
+  m_SizeDelta: {x: 178, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2066414247
 MonoBehaviour:
@@ -6952,7 +6941,6 @@ SceneRoots:
   - {fileID: 328168304}
   - {fileID: 1232927937}
   - {fileID: 585250654}
-  - {fileID: 631297936}
   - {fileID: 276157056}
+  - {fileID: 631297936}
   - {fileID: 1655694363}
-  - {fileID: 173488036}

@@ -1,8 +1,11 @@
-﻿using UnityEngine;
-using InGame.Model;
+﻿using System.Linq;
+using InGame.Model.Pizza;
 using InGame.View;
+using InGame.View.Pizza;
+using UnityEngine;
+using UnityEngine.Serialization;
 
-namespace InGame.Presenter
+namespace InGame.Presenter.Pizza
 {
     /// <summary>
     /// ピザを組み合わせるときに使うPresenter。
@@ -13,29 +16,26 @@ namespace InGame.Presenter
     {
         private PizzaPiecesModel _pizzaPiecesModel;
         
-        [SerializeField] private Transform mainPizzaTransform;
         [SerializeField] private CombinedPizzaView combinedPizzaView;
-        [SerializeField] private PizzaManager pizzaManager;
+        [SerializeField] private Transform mainPizzaTransform;
+        [SerializeField] private PizzaPresenter pizzaPresenter;
         [SerializeField] private PizzaPlacementPresenter pizzaPlacementPresenter;
         [SerializeField] private PizzaArrangementView pizzaArrangementView;
         
         
         private void Start()
         {
-            _pizzaPiecesModel = pizzaManager.GetPizzaPiecesModel();
+            _pizzaPiecesModel = pizzaPresenter.GetPizzaPiecesModel();
             _pizzaPiecesModel.ClearMainPizzaPieces();
         }
         
         public void OnClickPizza(GameObject parentPizza)
         {
             // 重複判定
-            foreach (Transform child in parentPizza.transform)
+            if (parentPizza.transform.Cast<Transform>().Any(child => _pizzaPiecesModel.ContainsPizzaPiece(child.name)))
             {
-                if (_pizzaPiecesModel.ContainsPizzaPiece(child.name))
-                {
-                    Debug.Log("重複してます。");
-                    return;
-                }
+                Debug.Log("重複してます。");
+                return;
             }
 
             // メインピザに配置する、リストに追加する。
@@ -46,6 +46,7 @@ namespace InGame.Presenter
                 _pizzaPiecesModel.AddPizzaPiece(child);
             }
             
+            // Viewも更新
             pizzaArrangementView.DeleteAllPizzaSlices();
             pizzaPlacementPresenter.PlacePizzas();
         }
