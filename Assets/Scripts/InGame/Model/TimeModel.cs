@@ -2,19 +2,19 @@ namespace InGame.Model
 {
     public class TimeModel
     {
-        private int _time;
+        private float _time;
 
-        public TimeModel(int time)
+        public TimeModel(float time)
         {
             _time = time;
         }
 
-        public int GetTime()
+        public float GetTime()
         {
             return _time;
         }
 
-        public void SetTime(int time)
+        public void SetTime(float time)
         {
             _time = time;
         }

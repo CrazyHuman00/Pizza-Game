@@ -2,7 +2,7 @@
 {
     public class ScoreModel
     {
-        private int _score;
+        private int _score = 0;
 
         public ScoreModel(int score)
         {

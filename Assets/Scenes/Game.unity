@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 5397885}
   - component: {fileID: 5397887}
   - component: {fileID: 5397886}
+  - component: {fileID: 5397888}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -256,6 +257,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5397884}
   m_CullTransparentMesh: 1
+--- !u!114 &5397888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5397884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc9853fcf6f47d9b07c45b908f58211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 5397886}
 --- !u!1 &44396592
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +741,78 @@ MonoBehaviour:
   pizzaManager: {fileID: 1232927938}
   pizzaPlacementPresenter: {fileID: 153691147}
   pizzaArrangementView: {fileID: 153691146}
+--- !u!1 &173488035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 173488036}
+  - component: {fileID: 173488037}
+  - component: {fileID: 173488038}
+  - component: {fileID: 173488039}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &173488036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173488035}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 639.23645, y: 362.2961, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &173488037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173488035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29cbedbf3d53407a9d7838b35779832b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &173488038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173488035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a2da521add4faf99d640ab88553fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreView: {fileID: 5397888}
+--- !u!114 &173488039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173488035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc9853fcf6f47d9b07c45b908f58211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 5397886}
 --- !u!1 &248672896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,51 +1395,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &410181310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 410181312}
-  - component: {fileID: 410181311}
-  m_Layer: 0
-  m_Name: ScoreManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &410181311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410181310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36c9947cb23a4155a346a10a659da94f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreView: {fileID: 1476674279}
---- !u!4 &410181312
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410181310}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 696.08844, y: 353.3871, z: 0.23284912}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &427161526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2133,7 +2174,7 @@ MonoBehaviour:
   sceneLoader: {fileID: 631297935}
   uiManager: {fileID: 276157057}
   countdown: 3
-  gameTime: 60
+  gameTime: 10
   countdownText: {fileID: 971846973}
   gameTimeText: {fileID: 248672898}
   finishedText: {fileID: 818026017}
@@ -4641,9 +4682,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7be56408a5543afb86bcfdb11e6b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreView: {fileID: 1476674279}
   pizzaManager: {fileID: 1232927938}
   mainPizzaTransform: {fileID: 1217856491}
+  scorePresenter: {fileID: 173488038}
 --- !u!1 &1245058219
 GameObject:
   m_ObjectHideFlags: 0
@@ -5349,7 +5390,6 @@ GameObject:
   - component: {fileID: 1476674276}
   - component: {fileID: 1476674278}
   - component: {fileID: 1476674277}
-  - component: {fileID: 1476674279}
   m_Layer: 5
   m_Name: GamePanel
   m_TagString: Untagged
@@ -5433,19 +5473,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476674275}
   m_CullTransparentMesh: 1
---- !u!114 &1476674279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1476674275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbc9853fcf6f47d9b07c45b908f58211, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 5397886}
 --- !u!1 &1495830125
 GameObject:
   m_ObjectHideFlags: 0
@@ -6924,8 +6951,8 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 328168304}
   - {fileID: 1232927937}
-  - {fileID: 276157056}
-  - {fileID: 1655694363}
   - {fileID: 585250654}
   - {fileID: 631297936}
-  - {fileID: 410181312}
+  - {fileID: 276157056}
+  - {fileID: 1655694363}
+  - {fileID: 173488036}

@@ -12,17 +12,16 @@ namespace InGame.Presenter
     /// スコアを加算させ、
     /// </summary>
     public class CompletePizzaPresenter : MonoBehaviour
-    { 
+    {
         private PizzaPiecesModel _pizzaPiecesModel;
-        private ScoreModel _scoreModel;
-        [SerializeField] private ScoreView scoreView;
         [SerializeField] private PizzaManager pizzaManager;
         [SerializeField] private Transform mainPizzaTransform;
+        [SerializeField] private ScorePresenter scorePresenter;
 
+        
         private void Start()
         {
             _pizzaPiecesModel = pizzaManager.GetPizzaPiecesModel();
-            _scoreModel = new ScoreModel(0);
         }
         
         private void Update()
@@ -30,13 +29,10 @@ namespace InGame.Presenter
             if (_pizzaPiecesModel.GetMainPizzaPieces().Count == 8)
             {
                 // スコアに加算
-                _scoreModel.AddScore(10);
+                scorePresenter.AddScore(10);
                 
                 // メインピザのリスト内を全て消す
                 _pizzaPiecesModel.ClearMainPizzaPieces();
-                
-                // Viewも更新
-                scoreView.SetScore(_scoreModel.GetScore());
                 
                 foreach (Transform child in mainPizzaTransform)
                 {
