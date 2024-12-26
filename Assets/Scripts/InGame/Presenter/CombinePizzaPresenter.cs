@@ -12,32 +12,23 @@ namespace InGame.Presenter
     public class CombinePizzaPresenter : MonoBehaviour
     {
         private PizzaPiecesModel _pizzaPiecesModel;
+        
         [SerializeField] private Transform mainPizzaTransform;
         [SerializeField] private CombinedPizzaView combinedPizzaView;
+        [SerializeField] private PizzaManager pizzaManager;
         [SerializeField] private PizzaPlacementPresenter pizzaPlacementPresenter;
         [SerializeField] private PizzaArrangementView pizzaArrangementView;
-        [SerializeField] private PizzaManager pizzaManager;
         
         
         private void Start()
         {
-            _pizzaPiecesModel = new PizzaPiecesModel();
+            _pizzaPiecesModel = pizzaManager.GetPizzaPiecesModel();
             _pizzaPiecesModel.ClearMainPizzaPieces();
-            InitializePizzaPieces();
-        }
-        
-        private void InitializePizzaPieces()
-        {
-            // Initialize pizza pieces from PizzaManager
-            var allPizzaPieces = pizzaManager.GetSubPizzas();
-            foreach (var piece in allPizzaPieces)
-            {
-                _pizzaPiecesModel.SetMainPizzaPieces(piece.transform);
-            }
         }
         
         public void OnClickPizza(GameObject parentPizza)
         {
+            // 重複判定
             foreach (Transform child in parentPizza.transform)
             {
                 if (_pizzaPiecesModel.ContainsPizzaPiece(child.name))
@@ -49,9 +40,12 @@ namespace InGame.Presenter
 
             // メインピザに配置する、リストに追加する。
             combinedPizzaView.PutAllPizzaToMainPizza(parentPizza.transform, mainPizzaTransform);
-            _pizzaPiecesModel.SetMainPizzaPieces(parentPizza.transform);
             
-            // サブピザを更新する。
+            foreach (Transform child in parentPizza.transform)
+            {
+                _pizzaPiecesModel.AddPizzaPiece(child);
+            }
+            
             pizzaArrangementView.DeleteAllPizzaSlices();
             pizzaPlacementPresenter.PlacePizzas();
         }

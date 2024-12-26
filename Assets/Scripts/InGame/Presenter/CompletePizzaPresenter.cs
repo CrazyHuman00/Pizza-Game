@@ -1,6 +1,8 @@
-﻿using InGame.Model;
+﻿using GameManager;
+using InGame.Model;
 using InGame.View;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 namespace InGame.Presenter
 {
@@ -13,19 +15,33 @@ namespace InGame.Presenter
     { 
         private PizzaPiecesModel _pizzaPiecesModel;
         private ScoreModel _scoreModel;
-        [SerializeField] private CompletePizzaView completePizzaView;
         [SerializeField] private ScoreView scoreView;
+        [SerializeField] private PizzaManager pizzaManager;
+        [SerializeField] private Transform mainPizzaTransform;
 
         private void Start()
         {
-            _pizzaPiecesModel = new PizzaPiecesModel();
+            _pizzaPiecesModel = pizzaManager.GetPizzaPiecesModel();
+            _scoreModel = new ScoreModel(0);
         }
-
+        
         private void Update()
         {
             if (_pizzaPiecesModel.GetMainPizzaPieces().Count == 8)
             {
-                completePizzaView.gameObject.SetActive(true);
+                // スコアに加算
+                _scoreModel.AddScore(10);
+                
+                // メインピザのリスト内を全て消す
+                _pizzaPiecesModel.ClearMainPizzaPieces();
+                
+                // Viewも更新
+                scoreView.SetScore(_scoreModel.GetScore());
+                
+                foreach (Transform child in mainPizzaTransform)
+                {
+                    Destroy(child.gameObject);
+                }
             }
         }
     }

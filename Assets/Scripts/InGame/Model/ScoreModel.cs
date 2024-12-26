@@ -4,9 +4,14 @@
     {
         private int _score;
 
-        public void AddScore()
+        public ScoreModel(int score)
         {
-            _score++;
+            _score = score;
+        }
+
+        public void AddScore(int score)
+        {
+            _score += score;
         }
 
         public int GetScore()
